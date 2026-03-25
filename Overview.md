@@ -1,8 +1,9 @@
 # GitHub SpecKit Guide
-Understanding GitHub SpecKit— discover it's purpose, concepts and follow a step-by-step tutorial to get started.
+Understanding GitHub SpecKit— discover it's purpose, concepts and implementation
 
 ## Introduction
-GitHub SpecKit is a structured workflow designed to take an idea from concept to implementation in a clear, organized, and scalable way. It follows Spec-Driven Development (SDD) where specifications become executables, flipping the traditional software development where 'code is king'. Here, we write a 'Spec' before writing code which becomes the ulitmate source of truth for the developer and AI. A Spec is a clear and detailed description of software functionality written in natural language that serves as a guidance to AI coding agents with the closest comparision being to a "Product Requirements Document". Spec-Driven Development separates decision-making into distinct stages using multi-step refinement rather than one-shot code generation from prompts to create a stuctured pathway for software development.
+GitHub SpecKit is a structured workflow designed to take an idea from concept to implementation in a clear, organized, and scalable way. It follows Spec-Driven Development (SDD) where specifications become executables, flipping the traditional software development where 'code is king'. Here, we write a 'Spec' before writing code which becomes the ulitmate source of truth for the developer and AI. A Spec is a clear and detailed description of software functionality written in natural language that serves as a guidance to AI coding agents with the closest comparision being to a "Product Requirements Document". <br>
+Spec-Driven Development separates decision-making into distinct stages using multi-step refinement rather than one-shot code generation from prompts to create a stuctured pathway for software development.
 
 The five phases of developing with SpecKit are:
 1. Constitution
@@ -23,26 +24,26 @@ Each stage has a unique purpose and should not overlap with others. Let's unders
 
 ### What it Includes
 - Purpose & Scope
-    - What the system should do & NOT do
-    - e.g: “The system generates production-ready backend APIs. It should not generate UI code unless explicitly requested.”
+    - What the system should do & NOT do <br>
+      e.g: “The system generates production-ready backend APIs. It should not generate UI code unless explicitly requested.”
 - Reasoning Guidelines
-    - Filter for decision-making when ambiguity arises
-    - e.g: “When requirements are unclear, ask clarifying questions before proceeding.”
+    - Filter for decision-making when ambiguity arises <br>
+      e.g: “When requirements are unclear, ask clarifying questions before proceeding.”
 - Safety & Constraints
-    - Define limits for sensitive data usage and ethical boundaries
-    - e.g: “Never generate code that exposes API keys or security vulnerabilities.”
+    - Define limits for sensitive data usage and ethical boundaries <br>
+      e.g: “Never generate code that exposes API keys or security vulnerabilities.”
  - Things to Avoid
-     - Explicitly state unwanted behaviours
-     - e.g: “Do not generate unit tests unless requested.”
+     - Explicitly state unwanted behaviours <br>
+       e.g: “Do not generate unit tests unless requested.”
   - Architecture Rules
-      - Ensure consistency by defining coding patterns
-      - e.g: "Strictly follow MVC (Model-View-Controller) pattern"
+      - Ensure consistency by defining coding patterns <br>
+        e.g: "Strictly follow MVC (Model-View-Controller) pattern"
   - Output Constraints
-      - Specify non-negotiable rules
-      - e.g: "Do not assume extra features beyond CRUD unless asked"
+      - Specify non-negotiable rules <br>
+        e.g: "Do not assume extra features beyond CRUD unless asked"
   -Iteration Rules
-      - Define how to accept feedback and improve outputs
-      - e.g: “When feedback is provided, update only relevant sections without rewriting everything.”
+      - Define how to accept feedback and improve outputs <br>
+        e.g: “When feedback is provided, update only relevant sections without rewriting everything.”
 
 ### What it Should NOT Include
 - Specific tools, frameworks, or technologies (unless long-term constraints)
@@ -56,7 +57,8 @@ This stage answers:
 ## 2. Phase II - Specify (Requirements Definition)
 
 ### Purpose
-Clearly defines what needs to be built.
+- Clearly defines what needs to be built
+- Focuses on the 'what + why' not the 'how'
 
 ### What it Includes
 - Feature descriptions
@@ -65,6 +67,10 @@ Clearly defines what needs to be built.
 - Input/output behavior
 - Acceptance criteria
 
+### What it Should NOT Include
+- Specific tools, frameworks, or technologies
+- Coding tasks
+  
 ### Examples
 - Users can register using email and password
 - System validates user credentials during login
@@ -79,7 +85,7 @@ This stage answers:
 ## 3. Phase III - Plan (System Design & Architecture)
 
 ### Purpose
-Outlines how the system will be built at a high level.
+- Outlines how the system will be built at a high level
 
 ### What it Includes
 - Architecture design
@@ -105,7 +111,7 @@ This stage answers:
 ## 4. Phase IV - Tasks (Execution Breakdown)
 
 ### Purpose
-Breaks the plan into actionable development steps.
+- Breaks the plan into actionable development steps
 
 ### What it Includes
 - Small, clear tasks
@@ -128,7 +134,7 @@ This stage answers:
 ## 5. Phase V - Implement (Execution & Delivery)
 
 ### Purpose
-Transforms tasks into working code.
+- Transforms tasks into working code
 
 ### What it Includes
 - Writing code
