@@ -65,4 +65,28 @@ Requirements:
 /speckit.implement Generate complete, working code for the application in the logical order defined in the task list.
 ```
 
-## Workflow
+## Github SpecKit: File Generation Workflow
+![File Generation Workflow](/Images/workflow.png)
+
+**Phase I - Initializing the Project**
+- Files are generated upon creation of Project
+- 
+**Phase II - Creating the Constitution**
+- ```Constitution.md```- Contains the constitution with core principles of the project <br>
+**Phase III - Defining Specification**
+- A new feature branch is created to contain all files created in subsequent phases that are related to that feature
+- ```spec.md``` - Contains the specifications of the feature
+- ```checklists/requirements.md``` - Has a checklist to validate specification completeness and quality before proceeding to planning <br>
+**Phase IV - Creating Plan**
+- ```plan.md``` - Contains high-level implementation plan outlining tech stack, architecture, and key decisions
+- ```research.md``` - Contains notes on explored options, trade-offs, and reasoning behind chosen approaches
+- ```data-model.md``` - Conatains definition of core data structures, entities, and their relationships
+- ```quickstart.md``` - Contains simple instructions to set up and run the project locally
+- ```contracts/demo-api.yaml``` - Contains API contract specifying endpoints, request/response formats, and interaction details
+- Contracts are generated when external or structured interactions are required
+- Contracts specify communication boundaries and the data exchange between parties <br>
+**Phase V - Generating Tasks**
+- ```tasks.md``` - Contains tasks list divided into phases and user stories
+- Tasks should be a list of actionable items that a developer can follow to build the code <br>
+**Phase VI - Implementation**
+- In this phase actual code files are generated according to tasks list
