@@ -112,6 +112,7 @@ This stage answers:
 
 ### Purpose
 - Breaks the plan into actionable development steps
+- Tasks should be actionable items that a developer can follow to build the code
 
 ### What it Includes
 - Small, clear tasks
