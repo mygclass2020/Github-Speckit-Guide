@@ -23,6 +23,9 @@ Each stage has a unique purpose and should not overlap with others. Let's unders
 - "Rulebook" or "Ground Truth" that must be followed when making decisions, generating specs or code
 
 ### What it Includes
+- Application Context
+    - High-level, Non-technical application context guides behaviour and anchors rules of the project <br>
+      e.g: A simple Todo application focused on basic task management with minimal features
 - Purpose & Scope
     - What the system should do & NOT do <br>
       e.g: “The system generates production-ready backend APIs. It should not generate UI code unless explicitly requested.”
