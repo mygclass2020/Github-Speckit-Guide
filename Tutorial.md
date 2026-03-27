@@ -30,31 +30,53 @@ Note: Make sure you're in the project root directory
 - Example:
 ```
 /speckit.constitution
-Create a clear and concise "constitution" for a simple full-stack Todo application.
+Create a concise and clear "constitution" for a simple Todo application.
 
-The constitution should define rules, constraints, and guidelines for generating both specifications and code.
+The constitution should define rules, constraints, and guiding principles for generating specifications and code.
 
-Requirements for the Todo app:
-- It must support basic CRUD operations (create, read, update, delete).
-- Backend MUST expose a clean REST API via FastAPI
-- Architecture must strictly follow the MVC (Model-View-Controller) pattern.
-- It must include both backend APIs and a simple frontend UI.
+Application Context
+- The application is a basic Todo app with CRUD functionality
+- It includes both backend APIs and a simple frontend UI
+- The goal is simplicity, clarity, and minimal implementation
 
-Constraints for the constitution:
-- Do not include unit testing requirements.
-- Avoid unnecessary features such as authentication, roles, or complex scalability concerns.
-- Emphasize simplicity, clarity, and minimal implementation.
+What to Include
 
-Guidelines for the constitution content:
-- Keep it concise and to the point (no long explanations or documentation).
-- Define clear sections such as purpose, architecture, backend rules, frontend rules, constraints, and behavior.
-- Ensure outputs generated under this constitution are minimal, clean, and production-ready.
-- Encourage consistency, readability, and separation of concerns.
-- Specify that only necessary templates and code should be generated (no verbosity).
+Purpose
+- Define the goal of the system and what it is designed to do
+- Emphasize simplicity and usability
 
-Output format:
-- Structured in markdown or clean bullet-point format.
-- No extra explanations outside the constitution itself.
+Architecture Principles
+- Enforce use of MVC (Model-View-Controller) pattern
+- Ensure clear separation of concerns
+
+Backend Guidelines
+- Use Python with FastAPI
+- Follow RESTful API design
+- Keep endpoints minimal and focused on CRUD
+
+Frontend Guidelines
+- Provide a simple and clean UI
+- Keep design minimal with a light green theme
+- Focus on usability over complexity
+
+General Rules
+- Keep all outputs concise and to the point
+- Avoid unnecessary features or overengineering
+- Maintain consistency across code and structure
+
+Constraints
+- Do NOT include unit tests
+- Do NOT include advanced features (authentication, roles, etc.)
+- Avoid excessive documentation or verbose explanations
+
+Behavior Guidelines
+- Ask for clarification when requirements are unclear
+- Prefer simple solutions over complex ones
+- Modify only relevant parts when refining outputs
+
+Output Format
+- Structured clearly using headings and bullet points
+- No extra explanations outside the constitution
 ```
 NOTE: This is prompt to create the constitution, NOT the content of the actual constitution
 
